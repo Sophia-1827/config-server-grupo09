@@ -40,6 +40,10 @@
             <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
@@ -75,8 +79,7 @@
                         <id>default-compile</id>
                         <phase>compile</phase>
                         <goals>
-                            <goal>compile</goal>
-                        </goals>
+                            </goals>
                         <configuration>
                             <annotationProcessorPaths>
                                 <path>
@@ -90,8 +93,7 @@
                         <id>default-testCompile</id>
                         <phase>test-compile</phase>
                         <goals>
-                            <goal>testCompile</goal>
-                        </goals>
+                            </goals>
                         <configuration>
                             <annotationProcessorPaths>
                                 <path>
